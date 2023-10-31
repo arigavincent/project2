@@ -1,0 +1,22 @@
+BoxLayout:
+    orientation: 'vertical'
+    spacing: 10
+    padding: 10
+
+    TextInput:
+        id: num1_input
+        hint_text: 'Enter number 1'
+        multiline: False
+
+    TextInput:
+        id: num2_input
+        hint_text: 'Enter number 2'
+        multiline: False
+
+    Button:
+        text: 'Add Numbers'
+        on_press: app.calculate_sum(root)
+
+    Label:
+        id: result_label
+        text: 'Result will appear here'
